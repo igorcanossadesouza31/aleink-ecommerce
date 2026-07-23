@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-paper text-ink-black font-body;
+}
+
+h1, h2, h3 {
+  @apply font-display;
+  letter-spacing: 0.01em;
+}
+
+::selection {
+  background-color: #ffd100;
+  color: #151316;
+}
+
+*:focus-visible {
+  outline: 3px solid #00aeef;
+  outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+  }
+}
+
+.ink-gradient-text {
+  background: linear-gradient(100deg, #00aeed 0%, #ec0c8c 50%, #ffd100 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
