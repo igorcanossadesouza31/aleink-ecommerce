@@ -9,6 +9,7 @@ import Checkout from './pages/Checkout'
 import OrderConfirmation from './pages/OrderConfirmation'
 import About from './pages/About'
 import Contact from './pages/Contact'
+import InstalarBulk from './pages/InstalarBulk'
 
 export default function App() {
   return (
@@ -22,6 +23,7 @@ export default function App() {
           <Route path="/carrinho" element={<Cart />} />
           <Route path="/checkout" element={<Checkout />} />
           <Route path="/pedido-confirmado" element={<OrderConfirmation />} />
+          <Route path="/como-instalar-bulk" element={<InstalarBulk />} />
           <Route path="/sobre" element={<About />} />
           <Route path="/contato" element={<Contact />} />
         </Routes>

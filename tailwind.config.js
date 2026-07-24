@@ -6,7 +6,7 @@ export default {
       colors: {
         ink: {
           cyan: '#00AEEF',
-          magenta: '#EC0C8C',
+          magenta: '#E4002B',
           yellow: '#FFD100',
           black: '#151316',
         },

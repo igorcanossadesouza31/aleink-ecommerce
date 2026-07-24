@@ -56,7 +56,7 @@ export default function Home() {
         <div className="grid sm:grid-cols-3 gap-5">
           {[
             { label: 'Impressoras com Bulk', to: '/produtos?categoria=Impressoras', color: '#00AEEF' },
-            { label: 'Tintas e Kits', to: '/produtos?categoria=Tintas', color: '#EC0C8C' },
+            { label: 'Tintas e Kits', to: '/produtos?categoria=Tintas', color: '#E4002B' },
             { label: 'Papéis e Chips', to: '/produtos?categoria=Papéis', color: '#FFD100' },
           ].map((item) => (
             <Link
@@ -93,7 +93,7 @@ export default function Home() {
               },
               {
                 n: '02',
-                color: '#EC0C8C',
+                color: '#E4002B',
                 title: 'INSTALAÇÃO COM GARANTIA',
                 text: 'Nosso time instala o sistema bulk com garantia e já entrega com a primeira carga de tinta.',
               },
@@ -122,7 +122,7 @@ export default function Home() {
         <h2 className="font-display text-3xl sm:text-4xl mb-12 max-w-2xl">ACOMPANHE E VEJA O QUE FALAM DA ALEINK</h2>
         <div className="grid sm:grid-cols-3 gap-5">
           {[
-            { label: 'Instagram', handle: '@aleinkimpressorass', href: 'https://www.instagram.com/aleinkimpressorass/', color: '#EC0C8C' },
+            { label: 'Instagram', handle: '@aleinkimpressorass', href: 'https://www.instagram.com/aleinkimpressorass/', color: '#E4002B' },
             { label: 'Facebook', handle: 'aleink.com.br', href: 'https://www.facebook.com/aleink.com.br/', color: '#00AEEF' },
             { label: 'Loja oficial', handle: 'aleinkimpressoras.com.br', href: 'https://aleinkimpressoras.com.br/', color: '#FFD100' },
           ].map((item) => (

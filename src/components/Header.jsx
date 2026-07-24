@@ -7,6 +7,7 @@ const NAV_LINKS = [
   { to: '/produtos?categoria=Impressoras', label: 'Impressoras' },
   { to: '/produtos?categoria=Tintas', label: 'Tintas' },
   { to: '/produtos?categoria=Bulk', label: 'Bulk' },
+  { to: '/como-instalar-bulk', label: 'Como Instalar o Bulk' },
   { to: '/sobre', label: 'Quem somos' },
   { to: '/contato', label: 'Contato' },
 ]

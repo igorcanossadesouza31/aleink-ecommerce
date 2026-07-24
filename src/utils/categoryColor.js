@@ -2,12 +2,12 @@
 // de "tinta" em todo o catálogo, sem precisar de fotos de produto reais.
 const MAP = {
   Impressoras: '#00AEEF',
-  Tintas: '#EC0C8C',
+  Tintas: '#E4002B',
   Kits: '#FFD100',
   Bulk: '#151316',
   Papéis: '#00AEEF',
-  Chip: '#EC0C8C',
-  Mimo: '#EC0C8C',
+  Chip: '#E4002B',
+  Mimo: '#E4002B',
 }
 
 export function categoryColor(category) {

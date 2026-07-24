@@ -4,7 +4,7 @@ export default function About() {
   return (
     <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-20 relative">
       <div className="absolute top-10 right-0 opacity-50 pointer-events-none hidden sm:block">
-        <InkBlob color="#EC0C8C" size={200} />
+        <InkBlob color="#E4002B" size={200} />
       </div>
 
       <p className="font-display text-xs text-ink-magenta mb-4">QUEM SOMOS</p>
