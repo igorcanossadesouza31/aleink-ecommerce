@@ -20,7 +20,7 @@ export default function Home() {
           <img
             src="/banner-hero.jpg"
             alt="Aleink — imprimindo sonhos. Impressoras, tintas e kits de recarga com alta resolução e o melhor custo por página."
-            className="w-full h-auto object-cover transition-transform duration-500 group-hover:scale-105"
+            className="w-full h-auto transition-transform duration-500 group-hover:scale-105"
           />
         </Link>
       </section>
@@ -116,27 +116,85 @@ export default function Home() {
         </div>
       </section>
 
-      {/* PROVA SOCIAL */}
+      {/* AVALIAÇÕES */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
-        <p className="font-display text-xs tracking-widest text-ink-magenta mb-4">QUEM JÁ COMPROU</p>
-        <h2 className="font-display text-3xl sm:text-4xl mb-12 max-w-2xl">ACOMPANHE E VEJA O QUE FALAM DA ALEINK</h2>
-        <div className="grid sm:grid-cols-3 gap-5">
+        <p className="font-display text-xs tracking-widest text-ink-magenta mb-4">AVALIAÇÕES NO GOOGLE</p>
+        <div className="flex flex-wrap items-end justify-between gap-4 mb-12">
+          <h2 className="font-display text-3xl sm:text-4xl max-w-2xl">O QUE OS CLIENTES DIZEM DA ALEINK</h2>
+          <a
+            href="https://www.google.com/maps/place/Aleink+Impressoras/@-23.4663876,-46.5852949,17z"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="font-display text-xs underline hover:text-ink-magenta"
+          >
+            VER NO GOOGLE →
+          </a>
+        </div>
+
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {[
-            { label: 'Instagram', handle: '@aleinkimpressorass', href: 'https://www.instagram.com/aleinkimpressorass/', color: '#E4002B' },
-            { label: 'Facebook', handle: 'aleink.com.br', href: 'https://www.facebook.com/aleink.com.br/', color: '#00AEEF' },
-            { label: 'Loja oficial', handle: 'aleinkimpressoras.com.br', href: 'https://aleinkimpressoras.com.br/', color: '#FFD100' },
-          ].map((item) => (
-            <a
-              key={item.label}
-              href={item.href}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="group relative overflow-hidden border-2 border-ink-black p-8 transition-all duration-200 hover:-translate-y-1 hover:shadow-[6px_6px_0_#151316]"
-            >
-              <span className="block h-2 w-10 mb-6 transition-all duration-200 group-hover:w-full" style={{ backgroundColor: item.color }} />
-              <p className="font-display text-lg">{item.label}</p>
-              <p className="text-ink-black/60 text-sm mt-1">{item.handle}</p>
-            </a>
+            {
+              name: 'Renan Oshita',
+              context: 'Local Guide · 20 avaliações no Google',
+              quote:
+                'Tenho uma Cânon IX6810 há anos e recentemente investi em uma WF5390 e o que já era bom ficou melhor! Minha linha de produção está a todo vapor. Fora todo o suporte que a Aleink oferece, atendimento diferenciado e de alta qualidade. Não troco ALEINK por NADA!',
+              color: '#00AEEF',
+            },
+            {
+              name: 'A Coruja Papeleira',
+              context: 'Cliente há 8 anos',
+              quote:
+                'Fui uma das primeiras clientes da Alessandra há uns 8 anos atrás, e não tenho PALAVRAS para o que sempre foi o atendimento e a qualidade dos serviços Aleink. Sigo sendo cliente fiel todos esses anos, atestando a confiança e durabilidade…',
+              color: '#E4002B',
+            },
+            {
+              name: 'Natália Moura',
+              context: 'Avaliação no Google · 8 meses atrás',
+              quote:
+                'Trabalho com personalizados e todas as minhas impressoras e tintas são da Alê. Sempre que precisei o Ribas me atendeu com toda atenção. AMO!',
+              color: '#FFD100',
+            },
+            {
+              name: 'Patrícia Paula',
+              context: '6 avaliações · 8 meses atrás',
+              quote:
+                'Minha experiência foi maravilhosa com Aleink, já estou na 3ª impressora rsrs. As meninas muito atenciosas e o suporte sempre que precisei foram fantástico.',
+              color: '#151316',
+            },
+            {
+              name: 'Mercia Maria Scareli Soranz',
+              context: 'Local Guide · 13 avaliações · um ano atrás',
+              quote:
+                'Antes de comprar minha impressora IX6810, pesquisei em vários lugares. A Alessandra me atendeu de um jeito que me encantou! Esclareceu todas as minhas dúvidas. Inclusive fez teste de impressão pra mim em um papel que eu uso aqui e enviei para ela, para que tivesse certeza que ficaria bom. Ficou perfeito! O suporte pós venda também é ótimo, mesmo a minha impressora já tendo mais de 4 anos. Eu recomendo de olhos fechados, pela qualidade do produto mas principalmente pela qualidade no atendimento.',
+              color: '#00AEEF',
+            },
+            {
+              name: 'Grazy Parties',
+              context: '3 avaliações · 3 anos atrás',
+              quote:
+                'Atendimento do técnico Ribas nota 1.000, segunda vez que ele me salva, dessa vez super fora do horário. Atendimento perfeito, muito atencioso e prestativo, sempre deixa minha impressora como nova. Obrigada pelo serviço perfeito.',
+              color: '#E4002B',
+            },
+          ].map((t) => (
+            <div key={t.name} className="border-2 border-ink-black p-8 bg-white">
+              <p className="text-ink-yellow tracking-widest mb-4" aria-label="5 estrelas">
+                ★★★★★
+              </p>
+              <p className="text-ink-black/80 mb-6">&ldquo;{t.quote}&rdquo;</p>
+              <div className="flex items-center gap-3">
+                <span
+                  className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full text-white font-display text-sm"
+                  style={{ backgroundColor: t.color }}
+                  aria-hidden="true"
+                >
+                  {t.name.charAt(0)}
+                </span>
+                <div>
+                  <p className="font-display text-sm">{t.name}</p>
+                  <p className="text-xs text-ink-black/50">{t.context}</p>
+                </div>
+              </div>
+            </div>
           ))}
         </div>
       </section>
