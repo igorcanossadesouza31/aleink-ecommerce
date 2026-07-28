@@ -15,7 +15,7 @@ export default function InstalarBulk() {
   return (
     <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
       <p className="font-display text-xs tracking-widest text-ink-magenta mb-4">TUTORIAIS</p>
-      <h1 className="font-display text-3xl sm:text-4xl mb-4 max-w-2xl">COMO INSTALAR O BULK NA SUA IMPRESSORA</h1>
+      <h1 className="font-display text-3xl sm:text-4xl mb-4 max-w-2xl">COMO REABASTECER O SISTEMA DE BULK ALEINK</h1>
       <p className="text-ink-black/70 max-w-xl mb-12">
         Passo a passo em vídeo, direto no nosso Instagram, mostrando como instalar o sistema bulk e
         deixar sua impressora pronta para imprimir sem trocar cartucho.
