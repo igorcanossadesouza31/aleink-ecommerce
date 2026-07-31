@@ -10,23 +10,10 @@ const PARAGRAPHS = [
 
 export default function About() {
   return (
-    <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
-      <p className="font-display text-xs text-ink-magenta mb-4">QUEM SOMOS</p>
-
-      <div className="grid lg:grid-cols-2 gap-12 items-start">
-        <div className="border-2 border-ink-black lg:sticky lg:top-24">
-          <img
-            src="/alessandra-canossa.jpg"
-            alt="Alessandra Canossa, fundadora da Aleink"
-            className="w-full aspect-[4/5] object-cover"
-          />
-          <div className="p-5 border-t-2 border-ink-black">
-            <p className="font-display text-sm">Alessandra Canossa</p>
-            <p className="text-xs text-ink-black/50 mt-1">Fundadora da Aleink</p>
-          </div>
-        </div>
-
-        <div>
+    <div className="py-20">
+      <div className="grid lg:grid-cols-2 gap-12 lg:gap-0 items-stretch">
+        <div className="px-4 sm:px-6 lg:pl-8 lg:pr-12 max-w-2xl">
+          <p className="font-display text-xs text-ink-magenta mb-4">QUEM SOMOS</p>
           <h1 className="font-display text-3xl sm:text-4xl mb-8">QUEM SOMOS</h1>
           <div className="space-y-6 text-ink-black/70 text-lg">
             {PARAGRAPHS.map((p) => (
@@ -34,9 +21,17 @@ export default function About() {
             ))}
           </div>
         </div>
+
+        <div className="min-h-[420px]">
+          <img
+            src="/alessandra-canossa.jpg"
+            alt="Alessandra Canossa, fundadora da Aleink"
+            className="w-full h-full object-cover"
+          />
+        </div>
       </div>
 
-      <div className="mt-16 grid sm:grid-cols-3 gap-6">
+      <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 mt-16 grid sm:grid-cols-3 gap-6">
         {[
           { label: 'Marcas trabalhadas', value: 'Canon · Epson · HP' },
           { label: 'Frete grátis', value: 'Acima de R$380' },
