@@ -26,7 +26,7 @@ export default function About() {
           <img
             src="/alessandra-canossa.jpg"
             alt="Alessandra Canossa, fundadora da Aleink"
-            className="w-full h-full object-cover object-[50%_25%]"
+            className="w-full h-full object-cover object-[50%_34%]"
           />
         </div>
       </div>
