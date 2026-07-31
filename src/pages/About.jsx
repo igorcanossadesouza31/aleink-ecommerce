@@ -22,11 +22,11 @@ export default function About() {
           </div>
         </div>
 
-        <div className="min-h-[420px]">
+        <div className="h-[70vh] overflow-hidden lg:sticky lg:top-20 lg:self-start lg:h-[calc(100vh-5rem)]">
           <img
             src="/alessandra-canossa.jpg"
             alt="Alessandra Canossa, fundadora da Aleink"
-            className="w-full h-full object-cover"
+            className="w-full h-full object-cover object-[50%_25%]"
           />
         </div>
       </div>
