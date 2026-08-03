@@ -15,12 +15,12 @@ export default function Home() {
   return (
     <div>
       {/* HERO */}
-      <section className="border-b-4 border-ink-black overflow-hidden bg-[#2a0604] flex items-center justify-center lg:min-h-screen">
-        <Link to="/produtos" className="group block w-full">
+      <section className="border-b-4 border-ink-black overflow-hidden">
+        <Link to="/produtos" className="group block">
           <img
             src="/banner-hero.jpg"
             alt="Aleink — imprimindo sonhos. Impressoras, tintas e kits de recarga com alta resolução e o melhor custo por página."
-            className="w-full h-auto lg:max-h-screen object-contain transition-transform duration-500 group-hover:scale-105"
+            className="w-full h-auto transition-transform duration-500 group-hover:scale-105"
           />
         </Link>
       </section>
